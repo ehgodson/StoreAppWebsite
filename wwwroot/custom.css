@@ -1,0 +1,75 @@
+﻿
+.navbar-dark {
+    background-color: #041f48 !important;
+    /*background-color: #06295f !important;*/
+    box-shadow: none;
+}
+.index-app-features h3 {
+    color: #0e4190;
+}
+.index-app-hero:after {
+    background: rgba(1, 22, 53, 0.8);
+}
+.index-app-hero {
+    background: url(/images/bgs/storeapp-retail-cashier.jpg);
+    background-position: center 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.index-mobile-features {
+    background-image: -o-linear-gradient(0deg,#041f48 0,#060f1d 100%);
+    background-image: -moz-linear-gradient(0deg,#041f48 0,#060f1d 100%);
+    background-image: -ms-linear-gradient(0deg,#041f48 0,#060f1d 100%);
+    background-image: linear-gradient(90deg,#041f48 0,#060f1d 100%);
+}
+.index-app-devices .cta a {
+    background: #0c387b;
+}
+.index-app-devices .cta a:hover {
+    background: #0b49a8;
+}
+.footer .newsletter form button {
+    background-color: #041f48;
+}
+.index-features-header:after {
+    background: rgba(2, 17, 39, 0.85);
+}
+.pricing-charts-header {
+    min-height: 280px;
+    background-image: linear-gradient(90deg,#092d63 0,#021129 100%);
+}
+.btn-shadow.btn-shadow-primary {
+    background: linear-gradient(#1558bf,#0c387b);
+}
+.agency-start-project-form form input[type=submit] {
+    background: linear-gradient(to bottom,#07285a 0,#031a31 100%);
+}
+.agency-alt-hero:after {
+    background: rgba(0, 7, 21, 0.6);
+}
+.business-single-client {
+    background-image: url(../images/bgs/storeapp-business-woman.jpg);
+}
+.business-single-client .quote-wrapper {
+    background: #041f48;
+}
+.business-single-client.index-app {
+    margin-top: 0px;
+}
+@media (min-width: 1200px) {
+    .navbar-dark .nav-item .nav-link--rounded:hover {
+        background-color: #fff;
+        color: #333;
+    }
+}
+
+.index-video-intro .img-bg p.buz {
+    font-size: 20px;
+    font-weight: 400;
+}
+.index-video-intro .img-bg p.buz img {
+    margin-bottom: 25px;
+}
+.index-video-intro .img-bg:after {
+    background: linear-gradient(rgba(255, 255, 255, 0) 60%,rgba(3, 15, 45, 0.89) 100%);
+}

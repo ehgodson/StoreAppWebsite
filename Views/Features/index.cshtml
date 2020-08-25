@@ -1,0 +1,220 @@
+﻿@{
+    ViewBag.Features = "active";
+    ViewData["Title"] = "Features";
+}
+
+<div class="index-features-header">
+  <section>
+    <h1 class="stripey">
+      Organize your income and expenses the easy way
+    </h1>
+    <p class="stripey">
+      StoreApp gives you detailed overview of your store to maximize profit
+    </p>
+    <div class="cta">
+      <a href="~/sign-up" class="btn-shadow btn-shadow-primary">
+        Sign Up For Free
+      </a>
+    </div>
+  </section>
+</div>
+
+<div class="index-features-nav d-none d-md-block">
+  <ul class="nav features justify-content-center">
+    <li>
+      <a href="#friends" class="scroll nav-link active featureFadeInDown">
+        Products &amp; Princing
+      </a>
+    </li>
+    <li>
+      <a href="#camera" class="scroll nav-link featureFadeInDown">
+        Multi-Store Inventory
+      </a>
+    </li>
+    <li>
+      <a href="#user" class="scroll nav-link featureFadeInDown">
+        Customers &amp; Reward
+      </a>
+    </li>
+    <li>
+      <a href="#files" class="scroll nav-link featureFadeInDown">
+        Online Business Tools
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div id="friends" class="index-features-friends">
+  <section class="clearfix mb-5">
+    <img src="~/images/devices/devices-7.png" class="browser" />
+
+    <div class="info">
+      <h3>Message your friends</h3>
+      <h4>
+        Powerful dashboard that lets you control your site, store or portfolio.
+      </h4>
+      <p>
+        Spacial has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with some smart people. Your projects will look great everywhere you go. Use new components that come included. It works in all browsers and your clients can pay instantly, to improve their experience.
+      </p>
+    </div>
+  </section>
+  <section class="clearfix mt-5">
+    <hr class="mb-5">
+    <h4>Access to your business on the go</h4>
+    <p>
+      Spacial has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with some smart people. Your projects will look great everywhere you go. Use new components that come included!
+    </p>
+    <p>
+      Spacial is an advanced theme solution for desktop, tablet, and mobile devices. It works in all browsers and your clients can pay instantly.
+    </p>
+  </section>
+  
+</div>
+
+<div id="camera" class="index-features-camera">
+  <section>
+    <h3>All your photos online</h3>
+    <h4>
+      Apply filters to your pictures, change settings and tag all your friends
+      Your customers will love you and keep coming back
+    </h4>
+    <div class="pic">
+      <img src="~/images/devices/devices-5.png" class="img-fluid" />
+    </div>
+  </section>
+</div>
+
+<div id="user" class="index-features-user">
+  <header>
+    <h3>Your files are always secured</h3>
+    <h4>
+      We have the best security infrastructure available, your files will always be safe and we make daily backups
+    </h4>
+  </header>
+  <section class="clearfix">
+    <img src="~/images/devices/iphone-14.png" class="devices float-right" />
+
+    <h4>Access to your business on the go</h4>
+    <p>
+      Spacial has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with some smart people. Your projects will look great everywhere you go. Use new components that come included!
+    </p>
+    <p>
+      Spacial is an advanced theme solution for desktop, tablet, and mobile devices. It works in all browsers and your clients can pay instantly.
+    </p>
+    <div class="icons">
+      <i class="ion-monitor"></i>
+      <i class="ion-ipad"></i>
+      <i class="ion-iphone"></i>
+    </div>
+  </section>
+</div>
+
+<div id="files" class="index-features-files clearfix">
+  <div class="container2">
+    <div class="container1">
+      <div class="col col-left">
+
+        <div class="features">
+          <div class="feature clearfix">
+            <div class="image">
+              <img src="~/images/icons/features-icon-upload.png" />
+            </div>
+            <div class="info">
+              <strong>
+                Improve your workflow today
+              </strong>
+              <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+              </p>
+            </div>
+          </div>
+          <div class="feature clearfix">
+            <div class="image">
+              <img src="~/images/icons/features-icon-earth.png" />
+            </div>
+            <div class="info">
+              <strong>
+                Your data in the cloud
+              </strong>
+              <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+              </p>
+            </div>
+          </div>
+          <div class="feature clearfix">
+            <div class="image">
+              <img src="~/images/icons/features-icon-repeat.png" />
+            </div>
+            <div class="info">
+              <strong>
+                Easy to customize
+              </strong>
+              <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col col-right">
+        <div class="info">
+          <h3>Sync your contacts now</h3>
+          <h4>
+            Powerful dashboard that lets you control your site and portfolio.
+          </h4>
+          <p>
+            Spacial has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with some smart people. Your projects will look great everywhere you go. Use new components that come included. It works in all browsers and your clients can pay instantly to everyone.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="index-features-cta">
+  <div class="container">
+    <div class="info">
+      <strong>
+        Ready to get started and be awesome?
+      </strong>
+      <p>
+        Try our 30-day trial no credit card required
+      </p>
+    </div>
+
+    <a href="#">
+      Sign Up Now
+    </a>
+  </div>
+</div>
+
+@section scripts {
+
+<script type="text/javascript">
+  $(function () {
+    var $features = $(".index-features-nav .features");
+    var position = $features.offset().top + 40;
+
+    $(window).scroll(function () {
+      var top = $(this).scrollTop();
+
+      if (top > position && !$features.hasClass("fixed")) {
+        $features.addClass("fixed fadeInDown");
+      } else if (top < position && $features.hasClass("fixed")) {
+        $features.removeClass("fixed fadeInDown");
+        $features.find("li:eq(0) .nav-link").addClass("active")
+      }
+    });
+
+    $('body').scrollspy({ 
+      target: '.index-features-nav'
+    });
+
+    setTimeout(function () {
+      $(".nav-link").removeClass("featureFadeInDown");
+    }, 1500);
+  });
+</script>
+    
+}

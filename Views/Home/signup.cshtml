@@ -1,0 +1,49 @@
+﻿@model ProspectRequest
+@{
+    ViewBag.Contact = "active";
+    ViewData["Title"] = "Sign Up";
+}
+
+<div class="pricing-charts-header">
+  <section class="container">
+    <h3 class="customFadeInUp">
+      Let's get you started'
+    </h3>
+    <p class="customFadeInUp">
+      We are confident that StoreApp is packed with features that will blow you away.
+    </p>
+  </section>
+</div>
+
+<div class="agency-start-project-intro" style="margin-top: 125px;">
+  <div class="container">
+    <h3>
+      Want to try StoreApp for free?
+    </h3>
+    <p>
+        Our team of business specialists are on waiting to receive your request. Kindly supply
+        your details below and we will contact immediately more information and get you started.
+    </p>
+  </div>
+</div>
+
+<div class="agency-start-project-form">
+  <div class="container">
+    <form asp-action="signup" asp-controller="home" method="post">
+      <h3>Contact Information</h3>
+      <p>Give us your contact information so we can speak with you about your busines</p>
+      <input type="text" asp-for="name" placeholder="Your name" required />
+      <input type="email" asp-for="email" placeholder="Email address" required />
+      <input type="text" asp-for="phone" placeholder="Your phone" required />
+      <h3>Company / Business Information</h3>
+      <p>Tell us a little about your company / business</p>
+      <input type="text" asp-for="company" placeholder="Company Name" required />
+      <input type="text" asp-for="location" placeholder="Company Location" required />
+      <hr>
+      <input type="submit" value="Send message" />
+    </form>
+  </div>
+</div>
+
+<div class="agency-start-city-bg">
+</div>

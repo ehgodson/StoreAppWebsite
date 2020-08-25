@@ -1,0 +1,188 @@
+﻿@{
+    ViewBag.Blog = "active";
+    ViewData["Title"] = "About";
+}
+
+<div class="agency-contact-hero">
+    <div class="container">
+        <h3 class="customFadeInUp">
+            Here's some stories that touch!
+        </h3>
+    </div>
+</div>
+
+<div class="blog-sidebar-header">
+  <div class="container">
+    <h4 class="title d-md-none float-left">Blog news</h4>
+    <div class="categories">
+      <a href="#">General</a>
+      <a href="#">Product Tips</a>
+      <a href="#">Success stories</a>
+      <a href="#">Business Tips</a>
+      <a href="#">StoreApp Update</a>
+    </div>
+    <div class="search">
+      <form>
+        <input type="text" class="form-control" placeholder="Search the blog...">
+        <a href="#">
+          <i class="ion-search"></i>
+        </a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="blog-sidebar-posts">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="post">
+          <a href="blog-post.html" class="pic">
+            <div style="background-image:url('images/unsplash/photo-1466854076813-4aa9ac0fc347.jpg');"></div>
+          </a>
+
+          <div class="title">
+            <a href="blog-post.html">A brief history of climate science</a>
+          </div>
+          <div class="author">
+            Jessica Smith, October 03, 2015
+          </div>
+          <p class="intro">
+            By Ed Hawkins, University of Reading. Climate change is often seen as a recent phenomenon, but its roots are actually far older — the stuff that is currently happening is beyond my understanding.
+            <br />
+            Some people say design is about solving problems. Obviously designers solve problems but so do dentists. Design is about cultural invention.
+          </p>
+          <a href="blog-post.html" class="continue-reading">Continue reading this post</a>
+        </div>
+
+        <div class="post">
+          <div class="video">
+            <div class="iframe-wrapper">
+              <iframe src="https://player.vimeo.com/video/24456787" width="750" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="title">
+            <a href="blog-post.html">Discover what is beyond our Solar System</a>
+          </div>
+          <div class="author">
+            Erica Wilson, October 11, 2015
+          </div>
+          <p class="intro">
+            By Ed Hawkins, University of Reading. Climate change is often seen as a recent phenomenon, but its roots are actually far older — the stuff that is currently happening is beyond my understanding.
+            <br />
+            Some people say design is about solving problems. Obviously designers solve problems but so do dentists. Design is about cultural invention.
+          </p>
+          <a href="blog-post.html" class="continue-reading">Continue reading this post</a>
+        </div>
+
+        <div class="post">
+          <a href="blog-post.html" class="pic">
+            <div style="background-image:url('images/unsplash/photo-1454942901704-3c44c11b2ad1.jpg');"></div>
+          </a>
+
+          <div class="title">
+            <a href="blog-post.html">How to get really good at programming</a>
+          </div>
+          <div class="author">
+            Amanda Johnson, September 23, 2015
+          </div>
+          <p class="intro">
+            By Ed Hawkins, University of Reading. Climate change is often seen as a recent phenomenon, but its roots are actually far older — the stuff that is currently happening is beyond my understanding.
+          </p>
+          <a href="blog-post.html" class="continue-reading">Continue reading this post</a>
+        </div>
+
+        <div class="post">
+          <a href="blog-post.html" class="pic">
+            <div style="background-image:url('images/unsplash/photo-1470753937643-efeb931202a9.jpg');"></div>
+          </a>
+
+          <div class="title">
+            <a href="blog-post.html">Get healthy riding a bicycle everyday</a>
+          </div>
+          <div class="author">
+            Benjamin Andrews, August 16, 2015
+          </div>
+          <p class="intro">
+            By Ed Hawkins, University of Reading. Climate change is often seen as a recent phenomenon, but its roots are actually far older — the stuff that is currently happening is beyond my understanding.
+            <br />
+            Some people say design is about solving problems. Obviously designers solve problems but so do dentists. Design is about cultural invention.
+          </p>
+          <a href="blog-post.html" class="continue-reading">Continue reading this post</a>
+        </div>
+
+        <div class="post">
+          <a href="blog-post.html" class="pic">
+            <div style="background-image:url('images/unsplash/photo-1442965416224-f6a7eca980fa.jpg');"></div>
+          </a>
+
+          <div class="title">
+            <a href="blog-post.html">Top 10 blog posts for digital marketing</a>
+          </div>
+          <div class="author">
+            Drew Williams, August 16, 2015
+          </div>
+          <p class="intro">
+            By Ed Hawkins, University of Reading. Climate change is often seen as a recent phenomenon, but its roots are actually far older — the stuff that is currently happening is beyond my understanding.
+            <br />
+            Some people say design is about solving problems. Obviously designers solve problems but so do dentists. Design is about cultural invention.
+          </p>
+          <a href="blog-post.html" class="continue-reading">Continue reading this post</a>
+        </div>
+
+      </div>
+      <div class="col-lg-3 sidebar">
+        <div class="updates">
+          <i class="fa fa-rss"></i>
+          <strong>
+            Free blog updates
+          </strong>
+          <p>
+            Never miss an update. 
+            Sign up  to receieve an email whenever we post something in the blog.
+          </p>
+          <a href="#" class="btn-shadow btn-shadow-primary">Subscribe now</a>
+        </div>
+        <div class="best-hits">
+          <i class="ion-arrow-graph-up-right"></i>
+          <strong>Check out our best hits</strong>
+          <a href="#">How to start a business</a>
+          <a href="#">How to sell online</a>
+          <a href="#">Climate change when needed</a>
+          <a href="#">Web development upstart</a>
+          <a href="#">Learn Rails in 30 days</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+@section scripts {
+
+  <script type="text/javascript">
+    $(function () {
+      $(".ion-search").click(function (e) {
+        e.preventDefault();
+
+        $(".search input:text").toggleClass("opened").focus();
+      });
+
+      var $header = $(".blog-sidebar-header"),
+      offset_top = $header.offset().top;
+
+      var scrollingFn = window.utils.debounce(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= offset_top) {
+          $header.addClass("sticky");
+        } else {
+          $header.removeClass("sticky");
+        }
+      }, 10);
+
+      $(window).scroll(scrollingFn);
+    });
+  </script>
+
+}

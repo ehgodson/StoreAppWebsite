@@ -1,0 +1,166 @@
+﻿@{
+    ViewBag.Pricing = "active";
+    ViewData["Title"] = "Pricing";
+    var features = new[] {
+        new { Description = "Basic Features", Basic = true, Standard = true, Premium = true },
+        new { Description = "Sales and Refund", Basic = true, Standard = true, Premium = true },
+        new { Description = "Inventory Management", Basic = true, Standard = true, Premium = true },
+        new { Description = "Accounting", Basic = true, Standard = true, Premium = true },
+        new { Description = "Customer Reward", Basic = false, Standard = true, Premium = true },
+        new { Description = "Advance Inventory", Basic = false, Standard = true, Premium = true },
+        new { Description = "Wholesales", Basic = false, Standard = true, Premium = true },
+        new { Description = "Price Profiles", Basic = false, Standard = true, Premium = true },
+        new { Description = "Payroll & Attendance", Basic = false, Standard = false, Premium = true },
+        new { Description = "Production Management", Basic = false, Standard = false, Premium = true },
+        new { Description = "Medical History", Basic = false, Standard = false, Premium = true },
+        new { Description = "Laboratory Management", Basic = false, Standard = false, Premium = true },
+        new { Description = "Hospital Management", Basic = false, Standard = false, Premium = true },
+        new { Description = "Asset Management", Basic = false, Standard = false, Premium = true }
+    }.ToList();
+}
+
+<div class="pricing-charts-header">
+    <section class="container">
+        <h3 class="customFadeInUp">
+            We have a plan for everyone
+        </h3>
+        <p class="customFadeInUp">
+            Whether you're a business or an individual, 30-day trial no credit card required.
+        </p>
+    </section>
+</div>
+
+<div class="pricing-features hidden-xs-down">
+    <div class="container">
+        <div class="main-header">
+            <h3>Comparison charts</h3>
+            <p>
+                Find and select the best package for your store
+            </p>
+        </div>
+
+        <div class="mt-5">
+            <table class="table table-bordered border-0  compare-table">
+                <thead>
+                    <tr>
+                        <th class="border-0"></th>
+                        <th class="text-center border-bottom-0" style="width:15%;">
+                            Basic
+                        </th>
+                        <th class="text-center border-bottom-0" style="width:15%;">
+                            Standard
+                        </th>
+                        <th class="text-center border-bottom-0" style="width:15%;">
+                            Flexi
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var feature in features)
+                    {
+                        <tr>
+                            <th style="font-weight:500;" scope="row">@feature.Description</th>
+                            <td class="text-center">
+                                @if (feature.Basic)
+                                {<img src="images/checked.png" class="check" alt="checkmark">}
+                            </td>
+                            <td class="text-center">
+                                @if (feature.Standard)
+                                {<img src="images/checked.png" class="check" alt="checkmark">}
+                            </td>
+                            <td class="text-center">
+                                @if (feature.Premium)
+                                {<img src="images/checked.png" class="check" alt="checkmark">}
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<div class="pricing-charts-faqs">
+    <div class="container">
+        <div class="faq-icon">
+            <i class="ion-help"></i>
+        </div>
+        <h3>
+            Frequently Asked Questions
+        </h3>
+
+        <div class="row">
+            <div class="col-md-6 faq">
+                <strong>
+                    What is the Yearly plan?
+                </strong>
+                <p>
+                    This plan is suitable for start-up businesses with high volume transaction.
+                    A fixed amount is expected to be paid annually to continue to use StoreApp.
+                    Includes with basic support &amp; maintenace yearly.
+                </p>
+            </div>
+            <div class="col-md-6 faq">
+                <strong>
+                    What is the Flexi package?
+                </strong>
+                <p>
+                    The Flexi Package allows you to choose whatever features of StoreApp you
+                    require per time. It's flexible, so you can always upgrade when you
+                    want.
+                </p>
+            </div>
+            <div class="col-md-6 faq">
+                <strong>
+                    Is one-time really one-time?
+                </strong>
+                <p>
+                    Yes. For One-time plan, you get to pay for StoreApp one time only for a
+                    lifetime. There are no additional future payments. However, at-least
+                    the <strong>Basic Maintenance @@ ₦10,000.00</strong> is required from the second year.
+                </p>
+            </div>
+            <div class="col-md-6 faq">
+                <strong>
+                    Why is Support &amp; Maintenance Required?
+                </strong>
+                <p>
+                    Through Support and Maintenance, we are able to fulfil our promise of
+                    prompt response to support requests and regular updates to keep your
+                    business up-to-date with latest business trends.
+                </p>
+            </div>
+            <div class="col-md-6 faq">
+                <strong>
+                    Are there any other payments?
+                </strong>
+                <p>
+                    There no additional payment. However, we offer other value added services
+                    such as the Online Tools, E-commerce Service, Online Backup which come at
+                    an additional cost, but these fees are not mandatory, you only
+                    pay when you subscribe
+                </p>
+            </div>
+            <div class="col-md-6 faq">
+                <strong>
+                    Do you offer a free trial?
+                </strong>
+                <p>
+                    If you want to try StoreApp for 45 days free of charge, please follow the link below and fill the
+                    form with your details, one of our agents will contact and get you started immediately
+                </p>
+            </div>
+        </div>
+
+        <div class="signup mt-4 mb-5 text-center">
+            <a href="~/sign-up" class="btn-shadow btn-shadow-primary btn-shadow-lg mb-3">
+                Start your unlimited trial for 45 days
+            </a>
+            <div class="message">
+                The StoreApp team members are ready to help you setup your store in no time.
+                No payment required!
+            </div>
+        </div>
+    </div>
+</div>

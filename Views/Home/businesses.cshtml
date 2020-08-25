@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Pricing = "active";
+    ViewData["Title"] = "Who can use ";
+    var buzs = new[] {
+        new { Description = "Retail Stores", Category = "Retail", Icon = "01.png" },
+        new { Description = "Tools Stores", Category = "Retail", Icon = "02.png" },
+        new { Description = "Pharmaceutical Stores", Category = "Health", Icon = "03.png" },
+        new { Description = "Gift Stores", Category = "Retail", Icon = "04.png" },
+        new { Description = "Hospitals", Category = "Health", Icon = "05.png" },
+        new { Description = "Hotels", Category = "Retail", Icon = "06.png" },
+        new { Description = "Fashion / Boutique", Category = "Retail", Icon = "07.png" },
+        new { Description = "Furniture", Category = "Retail", Icon = "08.png" },
+        new { Description = "Electronic Stores", Category = "Retail", Icon = "09.png" },
+        new { Description = "Computer Stores", Category = "Retail", Icon = "10.png" },
+        new { Description = "Phone Stores", Category = "Retail", Icon = "11.png" },
+        new { Description = "Farms", Category = "Production", Icon = "12.png" },
+        new { Description = "Restaurants", Category = "Foods", Icon = "13.png" },
+        new { Description = "Gas Station", Category = "Retail", Icon = "14.png" },
+        new { Description = "Laundry", Category = "Services", Icon = "15.png" },
+        new { Description = "Manufacturing", Category = "Production", Icon = "16.png" },
+        new { Description = "Sports Store", Category = "Retail", Icon = "17.png" },
+        new { Description = "Gym", Category = "Services", Icon = "18.png" },
+        new { Description = "Service Centers", Category = "Services", Icon = "19.png" },
+        new { Description = "Online Store", Category = "Retail", Icon = "20.png" }
+    }.ToList();
+}
+
+<div class="pricing-charts-header">
+    <section class="container">
+        <h3 class="customFadeInUp">
+            Who can use StoreApp?
+        </h3>
+        <p class="customFadeInUp">
+            StoreApp is robust and has features that cut across different kinds of businesses.
+        </p>
+    </section>
+</div>
+
+<div class="index-video-intro">
+    <p class="bg-text">Good for Business</p>
+
+    <div class="container">
+        <div class="row">
+        <div class="col-12">
+            <div class="index-video-title clearfix">
+            <h3>
+                Whatever you do for business, StoreApp has every thing you need.
+            </h3>
+            <p>
+                StoreApp has features that cut across different kinds of business. We current
+                support these kinds of businesses, but you can talk to us about business as
+                we are ready to work with you to provide for your peculiar needs
+            </p>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+        @foreach (var buz in buzs)
+        {
+            <div class="col-md-3 mb-5">
+                <a href="javascript:void(0);" class="img-bg" style="height: 250px; background-color: #041f48;">
+                    <p class="buz">
+                        <img src="~/images/icons/who/@buz.Icon" />
+                        <br/>
+                        @buz.Description
+                        <span>@buz.Category</span>
+                    </p>
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="clearfix pb-5">
+</div>

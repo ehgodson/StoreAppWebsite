@@ -1,0 +1,270 @@
+﻿@{
+    ViewBag.Home = "active";
+    ViewData["Title"] = "Welcome";
+}
+
+<script type="text/javascript">
+$(function () {
+    if (!window.utils.isMobile()) {
+    // parallax header
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop(),
+        slowScroll = scroll/4,
+        slowBg = slowScroll;
+
+        $('.index-app-hero').css("background-position", "center " + -slowBg + "px");
+    });
+    }
+});
+</script>
+
+<div class="index-app-hero">
+<div class="container">
+    <h2 class="customFadeInUp">
+    Learn about your customers,
+    <br> Take better decisions
+    </h2>
+    <p class="customFadeInUp">
+    A lot people are already selling with StoreApp, <br>
+    what are you waiting for?
+    </p>
+     <a href="~/sign-up" class="btn-pill btn-pill-success btn-pill-lg customFadeInUp">Sign Up Free</a> 
+</div>
+</div>
+
+<div class="index-app-news">
+<div class="container">
+    <span>New</span>
+    <strong>Download the newest version.</strong> We are constanly updating StoreApp for you, Stay up-to-date.
+    <a href="~/downloads" target="_blank">Download here.</a>
+</div>
+</div>
+
+<div class="index-app-features" style="padding-top:100px;">
+<section class="clearfix">
+    <img src="images/devices/devices-4.png" class="browser">
+    <div class="info">
+    <h3>Introducing StoreApp</h3>
+    <h4>
+        Storeapp is built to meet business demands for improved sales and earnings.
+    </h4>
+    <p>
+        StoreApp is a solution with a user-friendly design which makes it very easy to
+        use regardless of your technical expertise.
+    </p>
+    <p>
+        The focus is to help business owners/managers have the widest view of the business
+        in order to make informed business decisions, enhance rapid growth and yield BETTER profits.
+    </p>
+    </div>
+</section>
+</div>
+
+<div class="index-features mt-5" data-scroll>
+    <div class="container">
+        <header>
+        <h3>Why choose StoreApp?</h3>
+        <p class="lead" style="font-size:20px;line-height:28px;">
+            StoreApp is developed with the latest technologies available and it is  constantly upgraded with
+            new and innovative features that  enables you to run your business seamlessly. See the highlights
+            of StoreApp’s features below:
+        </p>
+        </header>
+        <section class="features">
+        <div class="row">
+            <div class="col-md-6 feature">
+            <img src="images/icons/features-icon-canvas.png" class="icon" />
+            <section>
+                <h4>
+                Multi-Store Inventory
+                </h4>
+                <p>
+                    You are in control of your stocks anywhere with our real-time inventory management tools
+                    that makes inventory control a breeze whether you have one or several stores. You can set
+                    customized low stock alerts, and make one-click ordering possible for your regular stocks.
+                </p>
+            </section>
+            </div>
+            <div class="col-md-6 feature">
+            <img src="images/icons/features-icon-repeat.png" class="icon" />
+            <section>
+                <h4>
+                Unlimited Pricing Options
+                </h4>
+                <p>
+                    Good pricing keeps you ahead of your competitors and gets your customers coming back. We
+                    understand that, and so we have provided several price models to allow you really stay
+                    ahead of the game.
+                </p>
+            </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 feature">
+            <img src="images/icons/features-icon-upload.png" class="icon" />
+            <section>
+                <h4>
+                    Customer Management / Loyalty
+                </h4>
+                <p>
+                    With effective customer management, you can increase your revenue significantly.
+                    Attract new customers and keep them coming back with our integrated loyalty &amp;
+                    reward program. Also build customer relationship with credit facilities within limits.
+                </p>
+            </section>
+            </div>
+            <div class="col-md-6 feature">
+            <img src="images/icons/features-icon-compass.png" class="icon" />
+            <section>
+                <h4>
+                    Payroll &amp; Attendance
+                </h4>
+                <p>
+                    Managers of growing businesses know that a good payroll system has a direct effect on
+                    the retention of their most valuable staff and on the financial health of their business.
+                    StoreApp helps business managers perform payroll, bonuses, deductions and tax related
+                    functions effectively.
+                </p>
+            </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 feature">
+            <img src="images/icons/features-icon-world.png" class="icon" />
+            <section>
+                <h4>
+                    Expand your reach online
+                </h4>
+                <p>
+                    Expand your reach beyond the four walls of your physical store, sell to anyone, anywhere
+                    and at anytime with our ecommerce solution. Also make better retail decisions with advanced
+                    online reporting available to you on any device.
+                </p>
+            </section>
+            </div>
+            <div class="col-md-6 feature">
+            <img src="images/icons/features-icon-ok.png" class="icon" />
+            <section>
+                <h4>
+                    Support is great
+                </h4>
+                <p>
+                    With multiple support channels - field agents, phone, email &amp; live chat, we’re available
+                    for you, 24 hours a day, 7 days a week. Our support team can get you through any technical
+                    hitch remotely.
+                </p>
+            </section>
+            </div>
+        </div>
+        </section>
+    </div>
+</div>
+
+@*<div class="index-features-user">
+<header>
+    <h3>Your files are always secured</h3>
+    <h4>
+    We have the best security infrastructure available, your files will always be safe and we make daily backups
+    </h4>
+</header>
+<section class="clearfix">
+    <img src="images/devices/iphone-14.png" class="devices float-right" />
+
+    <h4>Access to your business on the go</h4>
+    <p>
+    Spacial has both a web app and an android app to make your website easy and always available. It offers you all the designs in collaboration with some smart people. Your projects will look great everywhere you go. Use new components that come included!
+    </p>
+    <p>
+    Spacial is an advanced theme solution for desktop, tablet, and mobile devices. It works in all browsers and your clients can pay instantly.
+    </p>
+    <div class="icons">
+    <i class="ion-monitor"></i>
+    <i class="ion-ipad"></i>
+    <i class="ion-iphone"></i>
+    </div>
+</section>
+</div>*@
+
+<div class="index-mobile-features mt-0">
+    <div class="container">
+        <header>
+            <h3>
+                Who can use StoreApp?
+            </h3>
+            <p style="max-width:700px;margin-left:auto;margin-right:auto;">
+                If your business is about buying and selling, StoreApp is perfect for you.
+                It is packed with some business tools that can assist several types of
+                businesses run smoothly.
+            </p>
+        </header>
+        <div class="features clearfix">
+        <div class="feature">
+            <div class="pic">
+            <img src="~/images/icons/who/01.png" class="icon-camera" />
+            </div>
+            <p>
+            Retail - Supermarkets, fashion, homewares, gift shops &amp; more
+            </p>
+        </div>
+        <div class="feature">
+            <div class="pic">
+            <img src="~/images/icons/who/05.png" class="icon-user" />
+            </div>
+            <p>
+            Health - Pharmaceutical shops, Hospitals, Clinics &amp; Laboratories
+            </p>
+        </div>
+        <div class="feature">
+            <div class="pic">
+            <img src="~/images/icons/who/13.png" class="icon-cloud" />
+            </div>
+            <p>
+            Hotels, Fast food, Restaurants, Frozen food &amp; Farms
+            </p>
+        </div>
+        <div class="feature">
+            <div class="pic">
+            <img src="~/images/icons/who/19.png" class="icon-mail" />
+            </div>
+            <p>
+            <a asp-action="businesses" class="text-white">Click here to see a complete list of businesses.</a>
+            </p>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="business-single-client index-app">
+<div class="quote-wrapper">
+    <img src="~/images/logo-alt-w.png" class="logo">
+    <p>
+        StoreApp is currently helping about 200 businesses across Nigeria to become more efficient.
+        We have continously developed StoreApp to meet new business demands.
+    </p>
+    <p>
+        Get started with our FREE 45 days trail to get a feel or real business transformation
+    </p>
+    <div class="author">
+        <a href="https://storeapp.biz/downloads/docs/storeapp-getting-started.pdf" target="_blank">Download Document</a>
+    </div>
+</div>
+</div>
+
+<div class="index-app-devices mt-5 pt-5 mb-5">
+<div class="container">
+    <img src="images/devices/devices-4.png" class="img-fluid d-block mx-auto">
+
+    <div class="cta mt-5 pb-5">
+        <h3 style="color: #041f48;">
+            Start engaging with your customers and earn more
+        </h3>
+        <p>
+            Try our free trial for 45 days, no payment required
+        </p>
+        <a href="~/sign-up">
+            Get your free trial
+        </a>
+    </div>
+</div>
+</div>

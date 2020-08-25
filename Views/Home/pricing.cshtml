@@ -1,0 +1,216 @@
+﻿@{
+    ViewBag.Pricing = "active";
+    ViewData["Title"] = "Pricing";
+}
+
+<div class="pricing-charts-header">
+    <section class="container">
+        <h3 class="customFadeInUp">
+            We have a plan for everyone
+        </h3>
+        <p class="customFadeInUp">
+            Whether you're a business or an individual, 30-day trial no credit card required.
+        </p>
+    </section>
+</div>
+
+<div class="pricing-tabs-section">
+    <div class="container">
+        @*<div class="divider"></div>*@
+
+        <div class="header">
+            <h3>Payment Plans</h3>
+            <p>We offer very flexible payment plans. Click on the different plans to reveal the respective price</p>
+        </div>
+
+        <div class="tabs">
+            <div class="tab yearly active">
+                <span>Yearly Plan</span>
+            </div>
+            <div class="tab uncapped">
+                <span>One-off Plan</span>
+            </div>
+        </div>
+
+        <div class="plans">
+            <div class="row">
+                <div class="plan col-md-4">
+                    <div class="header">
+                        <span class="icon entypo-user"></span>
+                        Basic Package
+                        <div class="price" data-uncapped="₦139,750.00" data-yearly="₦34,937.50/yr">
+                            ₦34,937.50/yr
+                        </div>
+                    </div>
+                    <div class="specs">
+                        <div class="spec">Basic Features</div>
+                        <div class="spec">Sales and Refund</div>
+                        <div class="spec">Inventory Management</div>
+                        <div class="spec">Accounting</div>
+                    </div>
+                </div>
+                <div class="plan col-md-4 middle">
+                    <div class="header">
+                        <span class="icon entypo-users"></span>
+                        Standard Package
+                        <div class="price" data-uncapped="₦215,000.00" data-yearly="₦53,750.00/yr">
+                            ₦53,750.00/yr
+                        </div>
+                    </div>
+                    <div class="specs">
+                        <div class="spec">Basic Features</div>
+                        <div class="spec">Sales and Refund</div>
+                        <div class="spec">Inventory Management</div>
+                        <div class="spec">Accounting</div>
+                        <div class="spec">Customer Reward</div>
+                        <div class="spec">Advance Inventory</div>
+                        <div class="spec">Wholesales</div>
+                        <div class="spec">Price Profiles</div>
+                    </div>
+                </div>
+                <div class="plan col-md-4">
+                    <div class="header">
+                        <span class="icon entypo-suitcase"></span>
+                        Flexi Package
+                        <div class="price" data-uncapped="from ₦43,000.00" data-yearly="from ₦10,750/yr">
+                            from ₦10,750/yr
+                        </div>
+                    </div>
+                    <div class="specs">
+                        <div class="spec">
+                            It's a flexi package,<br/>you are free to choose from<br />any of the features below;
+                            <p class="p-4">
+                                Basic Features,
+                                Sales and Refund,
+                                Inventory Management,
+                                Accounting,
+                                Customer Reward,
+                                Advance Inventory,
+                                Wholesales,
+                                Price Profiles,
+                                Payroll & Attendance,
+                                Production Management,
+                                Medical History,
+                                Laboratory Management,
+                                Hospital Management,
+                                Asset Management
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="message mt-5">
+            <p>
+                ** All of our plans come with a 45 day trial period with no credit card / payment required.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div class="pricing-charts-faqs">
+    <div class="container">
+        <div class="faq-icon">
+            <i class="ion-help"></i>
+        </div>
+        <h3>
+            Frequently Asked Questions
+        </h3>
+
+        <div class="row">
+            <div class="col-md-6 faq">
+                <strong>
+                    What is the Yearly plan?
+                </strong>
+                <p>
+                    This plan is suitable for start-up businesses with high volume transaction.
+                    A fixed amount is expected to be paid annually to continue to use StoreApp.
+                    Includes with basic support &amp; maintenace yearly.
+                </p>
+            </div>
+            <div class="col-md-6 faq">
+                <strong>
+                    What is the Flexi package?
+                </strong>
+                <p>
+                    The Flexi Package allows you to choose whatever features of StoreApp you
+                    require per time. It's flexible, so you can always upgrade when you
+                    want.
+                </p>
+            </div>
+            <div class="col-md-6 faq">
+                <strong>
+                    Is one-time really one-time?
+                </strong>
+                <p>
+                    Yes. For One-time plan, you get to pay for StoreApp one time only for a
+                    lifetime. There are no additional future payments. However, at-least
+                    the <strong>Basic Maintenance @@ ₦10,000.00</strong> is required from the second year.
+                </p>
+            </div>
+            <div class="col-md-6 faq">
+                <strong>
+                    Why is Support &amp; Maintenance Required?
+                </strong>
+                <p>
+                    Through Support and Maintenance, we are able to fulfil our promise of
+                    prompt response to support requests and regular updates to keep your
+                    business up-to-date with latest business trends.
+                </p>
+            </div>
+            <div class="col-md-6 faq">
+                <strong>
+                    Are there any other payments?
+                </strong>
+                <p>
+                    There no additional payment. However, we offer other value added services
+                    such as the Online Tools, E-commerce Service, Online Backup which come at
+                    an additional cost, but these fees are not mandatory, you only
+                    pay when you subscribe
+                </p>
+            </div>
+            <div class="col-md-6 faq">
+                <strong>
+                    Do you offer a free trial?
+                </strong>
+                <p>
+                    If you want to try StoreApp for 45 days free of charge, please follow the link below and fill the
+                    form with your details, one of our agents will contact and get you started immediately
+                </p>
+            </div>
+        </div>
+
+        <div class="signup mt-4 mb-5 text-center">
+            <a href="~/sign-up" class="btn-shadow btn-shadow-primary btn-shadow-lg mb-3">
+                Start your unlimited trial for 45 days
+            </a>
+            <div class="message">
+                The StoreApp team members are ready to help you setup your store in no time.
+                No payment required!
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+
+  <script type="text/javascript">
+    $(function () {
+      // enables the pricing tabs
+      $tabs = $(".pricing-tabs-section .tab");
+      $prices = $(".pricing-tabs-section .price");
+
+      $tabs.click(function () {
+        $tabs.removeClass("active");
+        $(this).addClass("active");
+        var dataPrice = $(this).hasClass("capped") ? "capped" : $(this).hasClass("uncapped") ? "uncapped" : "yearly";
+        $prices.each(function (index, el) {
+          $(el).html($(el).data(dataPrice));
+        });
+      });
+    });
+  </script>
+
+}

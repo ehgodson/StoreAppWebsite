@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Resources = "active";
+    ViewData["Title"] = "Downloads";
+}
+@inject ProductVersions versions;
+
+<div class="career-post-header">
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>
+                    Download StoreApp and Tools
+                </h1>
+                <p>
+                    Stay up-to-date with the latest version of StoreApp
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="career-post-content mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <section>
+                    <h4>
+                        Get the most out of your StoreApp
+                    </h4>
+                    <p>
+                        StoreApp is constantly being upgraded for your convienience, our technical and research experts
+                        are always looking for ways to make your experiece with StoreApp better. Use the links below to
+                        download the latest version of StoreApp.
+                    </p>
+                    <hr />
+                </section>
+                <section>
+                    <h6>Download the latest StoreApp</h6>
+                    <p>
+                        Please note if your are running StoreApp with automatic update and your local server name is <strong class="font-weight-bold">SERVER</strong>,
+                        please download the <strong class="font-weight-bold"><a target="_blank" href="@($"http://storeapp.biz/downloads/storeapp-{versions.StoreApp}-auto.exe")">
+                        StoreApp with Auto Update</a></strong>, otherwise just download StoreApp using the link below.
+                    </p>
+                    <ul>
+                        <li><a target="_blank" href="@($"http://storeapp.biz/downloads/StoreApp-{versions.StoreApp}.exe")">StoreApp latest version - @versions.StoreApp</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h6>Download StoreApp tools</h6>
+                    <ul>
+                        <li><a target="_blank" href="@($"http://storeapp.biz/downloads/StoreBackup-{versions.Backup}.exe")">StoreApp Backup Tool</a></li>
+                        <li><a target="_blank" href="@($"http://storeapp.biz/downloads/StoreSync-{versions.Sync}.exe")">StoreApp Cloud Sychronization Tool</a></li>
+                        @*<li><a target="_blank" href="http://storeapp.biz/downloads/dotnetfx45.exe">.Net Framework 4.5 - embedded with StoreApp Installation</a></li>*@
+                    </ul>
+                </section>
+                <section>
+                    <h6>Third party tools</h6>
+                    <ul>
+                        <li><a target="_blank" href="https://www.microsoft.com/en-us/download/details.aspx?id=30653">.Net Framework 4.5</a></li>
+                        <li><a target="_blank" href="http://www.microsoft.com/en-us/download/details.aspx?id=42299">Microsoft SQL Server 2014 with tools</a></li>
+                        <li><a target="_blank" href="https://www.teamviewer.com/en/download">TeamViewer</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h6>Download StoreApp docs</h6>
+                    <ul>
+                        <li><a target="_blank" href="http://storeapp.biz/downloads/docs/storeapp-getting-started.pdf">StoreApp Getting Started Document</a></li>
+                        <li><a target="_blank" href="http://storeapp.biz/downloads/docs/storeapp-installation-guide.pdf">StoreApp Installation Guide</a></li>
+                    </ul>
+                </section>
+                <div class="apply-now">
+                    Get instant access to StoreApp KnowledgeBase Online
+                    <a href="http://kb.storeapp.biz" target="_blank" class="btn-shadow btn-shadow-primary">
+                        Visit Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
